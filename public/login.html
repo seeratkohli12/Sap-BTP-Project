@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAP ERP Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+<h2>SAP ERP System | Amber Enterprises (India) Ltd.</h2>
+</div>
+
+<div class="form-box">
+
+<h1 style="text-align:center; color:#003366;">SAP ERP Login</h1>
+<h3 style="text-align:center; color:gray;">Procure-to-Pay (P2P) Training Simulator</h3>
+
+<input type="text" id="userid" placeholder="Enter User ID">
+
+<input type="password" id="password" placeholder="Enter Password">
+
+<select id="module">
+<option value="">Select Module</option>
+<option>SAP MM - Materials Management</option>
+<option>SAP FI - Financial Accounting</option>
+</select>
+
+<button onclick="login()">Login</button>
+
+<p id="msg" class="success">Login Successful</p>
+
+</div>
+
+<div class="footer">
+Capstone Project | SAP MM Procurement Workflow System
+</div>
+
+<script>
+function login(){
+
+let user = document.getElementById("userid").value;
+let pass = document.getElementById("password").value;
+let module = document.getElementById("module").value;
+
+if(user === "" || pass === "" || module === ""){
+alert("Please fill all fields");
+return;
+}
+
+document.getElementById("msg").style.display = "block";
+
+setTimeout(function(){
+window.location.href="dashboard.html";
+},1000);
+
+}
+</script>
+
+</body>
+</html>

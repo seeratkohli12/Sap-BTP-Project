@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIGO - Goods Receipt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+<h2>SAP ERP > Materials Management > MIGO</h2>
+</div>
+
+<div class="hero">
+<h1>MIGO - Goods Receipt</h1>
+<p>Post goods received against Purchase Order and automatically update inventory stock.</p>
+</div>
+
+<div class="form-box">
+
+<input type="text" placeholder="Purchase Order Number">
+
+<input type="text" placeholder="Material Code">
+
+<input type="number" placeholder="Received Quantity">
+
+<input type="date" placeholder="Posting Date">
+
+<input type="text" placeholder="Storage Location">
+
+<input type="text" placeholder="Plant Code">
+
+<button onclick="showMsg()">Post Goods Receipt</button>
+
+<p id="msg" class="success">Goods Receipt Posted Successfully</p>
+
+</div>
+
+<div class="footer">
+Amber Enterprises | Inventory Management Module
+</div>
+
+<script>
+function showMsg(){
+document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>

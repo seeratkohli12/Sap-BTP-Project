@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MM01 - Create Material</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+<h2>SAP ERP > Materials Management > MM01</h2>
+</div>
+
+<div class="hero">
+<h1>MM01 - Material Master Creation</h1>
+<p>Create and maintain material master records for procurement and inventory management.</p>
+</div>
+
+<div class="form-box">
+
+<input type="text" placeholder="Material Name">
+
+<input type="text" placeholder="Material Code">
+
+<input type="number" placeholder="Unit Price">
+
+<input type="text" placeholder="Base Unit (EA / KG / LTR)">
+
+<input type="text" placeholder="Material Type (ROH / FERT)">
+
+<button onclick="showMsg()">Save Material</button>
+
+<p id="msg" class="success">Material Master Saved Successfully</p>
+
+</div>
+
+<div class="footer">
+Amber Enterprises | Material Management Module
+</div>
+
+<script>
+function showMsg(){
+document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>

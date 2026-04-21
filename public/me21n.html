@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ME21N - Purchase Order</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+<h2>SAP ERP > Materials Management > ME21N</h2>
+</div>
+
+<div class="hero">
+<h1>ME21N - Create Purchase Order</h1>
+<p>Generate purchase orders for approved vendors based on procurement requirements.</p>
+</div>
+
+<div class="form-box">
+
+<input type="text" placeholder="Purchase Order Number">
+
+<input type="text" placeholder="Vendor Code">
+
+<input type="text" placeholder="Material Code">
+
+<input type="number" placeholder="Order Quantity">
+
+<input type="number" placeholder="Net Price">
+
+<input type="number" placeholder="Total Amount">
+
+<input type="date" placeholder="Delivery Date">
+
+<button onclick="showMsg()">Create PO</button>
+
+<p id="msg" class="success">Purchase Order Created Successfully</p>
+
+</div>
+
+<div class="footer">
+Amber Enterprises | Purchase Order Management Module
+</div>
+
+<script>
+function showMsg(){
+document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>

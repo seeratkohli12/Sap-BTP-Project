@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ME51N - Purchase Requisition</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+<h2>SAP ERP > Materials Management > ME51N</h2>
+</div>
+
+<div class="hero">
+<h1>ME51N - Create Purchase Requisition</h1>
+<p>Raise internal procurement requests for required materials and services.</p>
+</div>
+
+<div class="form-box">
+
+<input type="text" placeholder="Material Code">
+
+<input type="number" placeholder="Required Quantity">
+
+<input type="date" placeholder="Required Date">
+
+<input type="text" placeholder="Plant Code">
+
+<input type="text" placeholder="Storage Location">
+
+<button onclick="showMsg()">Create PR</button>
+
+<p id="msg" class="success">Purchase Requisition Created Successfully</p>
+
+</div>
+
+<div class="footer">
+Amber Enterprises | Internal Procurement Request Module
+</div>
+
+<script>
+function showMsg(){
+document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>

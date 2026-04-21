@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F-53 - Vendor Payment</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+<h2>SAP ERP > Financial Accounting > F-53</h2>
+</div>
+
+<div class="hero">
+<h1>F-53 - Outgoing Vendor Payment</h1>
+<p>Process and post outgoing payments to vendors against verified invoices.</p>
+</div>
+
+<div class="form-box">
+
+<input type="text" placeholder="Vendor Code">
+
+<input type="text" placeholder="Invoice Number">
+
+<input type="number" placeholder="Payment Amount">
+
+<input type="text" placeholder="Bank Account">
+
+<input type="date" placeholder="Payment Date">
+
+<input type="text" placeholder="Payment Method (NEFT / RTGS)">
+
+<button onclick="showMsg()">Post Payment</button>
+
+<p id="msg" class="success">Vendor Payment Posted Successfully</p>
+
+</div>
+
+<div class="footer">
+Amber Enterprises | Accounts Payable Module
+</div>
+
+<script>
+function showMsg(){
+document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>

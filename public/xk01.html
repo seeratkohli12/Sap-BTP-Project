@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XK01 - Create Vendor</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+<h2>SAP ERP > Materials Management > XK01</h2>
+</div>
+
+<div class="hero">
+<h1>XK01 - Vendor Master Creation</h1>
+<p>Create and maintain vendor master data for procurement operations.</p>
+</div>
+
+<div class="form-box">
+
+<input type="text" placeholder="Vendor Name">
+
+<input type="text" placeholder="Vendor Code">
+
+<input type="text" placeholder="City">
+
+<input type="text" placeholder="GST Number">
+
+<input type="text" placeholder="Payment Terms (Net 30)">
+
+<button onclick="showMsg()">Save Vendor</button>
+
+<p id="msg" class="success">Vendor Master Created Successfully</p>
+
+</div>
+
+<div class="footer">
+Amber Enterprises | Vendor Management Module
+</div>
+
+<script>
+function showMsg(){
+document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>

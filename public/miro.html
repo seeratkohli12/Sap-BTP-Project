@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIRO - Invoice Verification</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="topbar">
+<h2>SAP ERP > Materials Management > MIRO</h2>
+</div>
+
+<div class="hero">
+<h1>MIRO - Invoice Verification</h1>
+<p>Verify vendor invoices against Purchase Order and Goods Receipt documents.</p>
+</div>
+
+<div class="form-box">
+
+<input type="text" placeholder="Invoice Number">
+
+<input type="text" placeholder="Purchase Order Number">
+
+<input type="number" placeholder="Invoice Amount">
+
+<input type="date" placeholder="Invoice Date">
+
+<input type="text" placeholder="Vendor Code">
+
+<input type="text" placeholder="Reference Document No.">
+
+<button onclick="showMsg()">Post Invoice</button>
+
+<p id="msg" class="success">Invoice Verified Successfully</p>
+
+</div>
+
+<div class="footer">
+Amber Enterprises | Invoice Processing Module
+</div>
+
+<script>
+function showMsg(){
+document.getElementById("msg").style.display="block";
+}
+</script>
+
+</body>
+</html>
